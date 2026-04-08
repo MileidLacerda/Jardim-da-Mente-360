@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#EDE6DF] border-b border-[#C9B3BE] px-10 py-4 flex justify-between items-center">
+    <nav className="bg-[#F7F9F7]/80 backdrop-blur-md border-b border-[#EDE6DF] px-10 py-4 flex justify-between items-center sticky top-0 z-50">
       <h1 className="text-xl font-bold text-[#3F5D46]">Jardim da Mente 360</h1>
 
       <ul className="flex gap-8 text-sm font-medium text-[#2E2E2E]">

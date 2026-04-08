@@ -20,17 +20,17 @@ const galleryItems = [
 
 export default function SectionGallery() {
   return (
-    <section className="px-6 py-16 md:px-12 lg:px-20 bg-[#F7F9F7]">
+    <section className="min-h-screen px-6 py-24 md:px-12 lg:px-20 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto text-center">
         <span className="inline-flex items-center rounded-full bg-[#A78C9A]/10 px-4 py-1 text-sm font-semibold text-[#8E6F7D]">
           Materiais em destaque
         </span>
         <h2 className="mt-6 text-3xl font-bold text-[#2E2E2E]">
-          Fotos reais dos materiais
+          Materiais utilizados por educadores
         </h2>
         <p className="mt-4 text-base leading-8 text-[#5A5A5A]">
-          Use suas imagens de materiais para apresentar profissionalismo e
-          clareza, reforçando a qualidade do seu trabalho.
+          Recursos práticos e confiáveis para apoiar o desenvolvimento cognitivo
+          das crianças, com foco em atenção, memória e aprendizagem.
         </p>
       </div>
 
@@ -38,15 +38,15 @@ export default function SectionGallery() {
         {galleryItems.map((item) => (
           <div
             key={item.title}
-            className="rounded-[2rem] border border-[#EDE6DF] bg-white overflow-hidden shadow-sm"
+            className="group rounded-4xl border border-[#EDE6DF] bg-white overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300"
           >
-            <div className="aspect-[4/3] bg-[#EDE6DF] flex items-center justify-center">
+            <div className="aspect-4/3 bg-[#EDE6DF] overflow-hidden">
               <Image
                 src={item.src}
                 alt={item.title}
                 width={400}
                 height={300}
-                className="object-cover"
+                className="object-cover w-full h-full group-hover:scale-105 transition duration-500"
               />
             </div>
             <div className="p-5">

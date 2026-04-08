@@ -30,9 +30,11 @@ export default function SectionHighlights() {
         {highlights.map((item) => (
           <div
             key={item.title}
-            className="rounded-4xl border border-[#EDE6DF] bg-white p-6 shadow-sm"
+            className="rounded-4xl border border-[#EDE6DF] bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"
           >
-            <h3 className="font-semibold text-[#2E2E2E]">{item.title}</h3>
+            <h3 className="font-semibold text-lg text-[#6B8F71]">
+              {item.title}
+            </h3>
             <p className="mt-3 text-sm text-[#5A5A5A]">{item.description}</p>
           </div>
         ))}
